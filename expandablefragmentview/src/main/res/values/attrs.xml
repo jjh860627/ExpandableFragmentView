@@ -1,0 +1,13 @@
+<resources>
+    <declare-styleable name="ExpandableFragmentView">
+        <attr name="bgColor" format="reference|color"/>
+        <attr name="arrowImage" format="reference|integer"/>
+        <attr name="text" format="reference|string"/>
+        <attr name="textColor" format="reference|integer"/>
+        <attr name="fragmentName" format="reference|string"/>
+        <attr name="isExpanded" format="boolean"/>
+        <attr name="collapseSiblingsWhenExpand" format="boolean"/>
+        <attr name="animDurationWeight" format="float"/>
+    </declare-styleable>
+
+</resources>
