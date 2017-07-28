@@ -1,6 +1,7 @@
 package com.jjh.libs.expandablefragmentview.utils;
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
@@ -25,7 +26,7 @@ public class AnimationUtil {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
                 v.getLayoutParams().height = interpolatedTime == 1
-                        ? targetHeight
+                        ? ViewGroup.LayoutParams.WRAP_CONTENT
                         : (int)(targetHeight * interpolatedTime);
                 v.requestLayout();
             }

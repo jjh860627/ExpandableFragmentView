@@ -66,7 +66,7 @@ public class ExpandableFragmentView extends LinearLayout implements View.OnClick
         flFragmentContainer = (FrameLayout) findViewById(R.id.flFragmentContainer);
 
         rlBtnContainer.setOnClickListener(this);
-        flFragmentContainer.addOnLayoutChangeListener(new OnLayoutChangeListener() {
+        /*flFragmentContainer.addOnLayoutChangeListener(new OnLayoutChangeListener() {
             @Override
             public void onLayoutChange(final View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
                 if(isOnToggle || v.getVisibility() == View.GONE) return;
@@ -85,7 +85,7 @@ public class ExpandableFragmentView extends LinearLayout implements View.OnClick
                     });
                 }
             }
-        });
+        });*/
     }
 
     private void getAttrs(AttributeSet attrs) {
